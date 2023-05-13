@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBNB - BEM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300,400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+        <header class="header">
+            <div class="barra contenedor">
+                <div class="barra__logo">
+                    <div class="barra__nombre">Viaje|</div>
+                </div>
+                <nav class="barra__navegacion">
+                    <a href="#">Places to stay</a>
+                    <a href="#">Experiences</a>
+                    <a href="#">Online experiences</a>
+                </nav>
+                <nav class="barra__login">
+                    <a href="#">Become a Host</a>
+                </nav>
+            </div>
+
+            <form action="" class="formulario contenedor">
+                <div class="formulario__campo">
+                    <label for="ubicacion" class="formulario__label">Location</label>
+                    <input type="text" class="formulario__input" id="ubicacion" placeholder="Where do you go?">
+                </div>
+        
+                <div class="formulario__campo">
+                    <label for="llegada" class="formulario__label">Arrival</label>
+                    <input type="date" class="formulario__input" id="llegada">
+                </div>
+        
+                <div class="formulario__campo">
+                    <label for="salida" class="formulario__label">Departure</label>
+                    <input type="date" class="formulario__input" id="salida" placeholder="Where do you go?">
+                </div>
+        
+                <div class="formulario__campo">
+                    <label for="huespedes" class="formulario__label">Guests</label>
+                    <input type="number" class="formulario__input" id="huespedes" placeholder="Where do you go?">
+                </div>
+        
+                <div class="formulario__campo">
+                    <input type="submit" class="formulario__input" value="Find">
+                </div>
+            </form>
+
+            <div class="header__busqueda contenedor">
+                <p class="header__busqueda-label">Don't know where to go?</p>
+                <a href="#" class="header__busqueda-boton">searh flexible</a>
+            </div>
+        </header>
+
+</body>
+</html>
