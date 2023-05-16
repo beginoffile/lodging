@@ -40,3 +40,21 @@
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
 }
+
+@mixin scrollHorizontal($dimension,$gap){
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: $dimension;
+    column-gap: $gap;
+    
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+
+    > * {
+        scroll-snap-align: center; 
+    }
+
+    @include tablet { 
+        overflow-x: hidden;
+    }
+}
